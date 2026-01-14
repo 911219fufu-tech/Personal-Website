@@ -1,7 +1,7 @@
 // app/page.tsx - Home Page
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-gray-100 text-gray-800 flex items-center justify-center">
+    <main className="w-full min-h-screen bg-gray-100 text-gray-800 flex items-center justify-center pr-32">
       <section className="hero-section px-8 py-12 max-w-7xl mx-auto w-full">
         <div className="flex items-center justify-between gap-16 md:gap-8">
           <div className="flex-1">
