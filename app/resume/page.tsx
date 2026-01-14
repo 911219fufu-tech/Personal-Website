@@ -12,7 +12,7 @@ export default function Resume() {
 
       <section className="mb-6 resume-section">
         <h2 className="text-2xl font-semibold mb-2">Summary</h2>
-        <p>Master's student in Cybersecurity with full-stack and UI/UX experience, AI and data analysis background, and experience launching e-commerce and web projects.</p>
+        <p>Master's student in Computer Science seeking UX/UI and Software Engineering roles. Full-stack development, information security, and data analysis expertise with hands-on experience in penetration testing and security tools (Kali Linux). Track record of launching e-commerce business and building high-impact applications.</p>
       </section>
 
       <section className="mb-6 resume-section">
@@ -50,14 +50,14 @@ export default function Resume() {
 
       <section className="mb-6 resume-section">
         <h2 className="text-2xl font-semibold mb-2">Education</h2>
-        <p className="text-sm"><strong>New York University, Tandon School of Engineering</strong> — M.S. in Cybersecurity (Sep 2025 - May 2027 expected)</p>
+        <p className="text-sm"><strong>New York University, Tandon School of Engineering</strong> — M.S. in Computer Science (Sep 2025 - May 2027 expected)</p>
         <p className="text-sm mt-2"><strong>San Francisco State University / Feng Chia University</strong> — M.S. in Computer Science (Dual Degree) (Sep 2021 - May 2025)</p>
       </section>
 
       <section className="mb-6 resume-section">
         <h2 className="text-2xl font-semibold mb-2">Technical Strengths</h2>
         <p className="text-sm">Languages: Python, Java, C, C++, C#, JavaScript, HTML, CSS, SQL, MATLAB</p>
-        <p className="text-sm">Toolkits: Node.js, PyTorch, MySQL, Git, Figma</p>
+        <p className="text-sm">Toolkits: Node.js, PyTorch, MySQL, Git, Figma, Kali Linux, Burp Suite</p>
         <p className="text-sm">Specialties: Web Development (Frontend/UI Design), Cybersecurity (Risk Assessment, Vulnerability Scanning, Penetration Testing)</p>
       </section>
 

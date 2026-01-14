@@ -7,65 +7,73 @@ export const metadata = {
 export default function Contact() {
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16 flex items-center justify-center">
-      <div className="max-w-2xl mx-auto w-full">
-        <h2 className="text-5xl font-bold mb-4 text-gray-800 text-center">CONTACT</h2>
-        <p className="text-xl text-gray-600 text-center mb-12">Let's Connect!</p>
-        
-        <div className="bg-gray-50 p-12 rounded-lg shadow-lg">
-          <p className="text-lg text-gray-700 mb-8 text-center">
-            Feel free to reach out via email, connect on LinkedIn, or download my resume to learn more about my experience.
-          </p>
+      <div className="max-w-5xl mx-auto w-full">
+        {/* Title with line */}
+        <div className="flex items-center gap-0 mb-4">
+          <div className="h-1 w-16 bg-gray-800"></div>
+          <div className="w-3 h-3 rounded-full bg-gray-800"></div>
+          <h2 className="text-6xl font-bold text-gray-800 ml-6" style={{ fontFamily: "'Arvo', serif" }}>CONTACT</h2>
+        </div>
 
-          <div className="space-y-6">
-            {/* Email */}
-            <div className="flex items-center gap-6 p-6 bg-white rounded-lg hover:shadow-md transition">
-              <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg className="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-gray-600">Email</p>
-                <a href="mailto:jf5456@nyu.edu" className="text-lg font-bold text-gray-800 hover:text-yellow-500">
-                  jf5456@nyu.edu
-                </a>
-              </div>
-            </div>
+        {/* Subtitle */}
+        <p className="text-2xl text-gray-600 mb-6">Feel free to contact me!</p>
 
-            {/* LinkedIn */}
-            <div className="flex items-center gap-6 p-6 bg-white rounded-lg hover:shadow-md transition">
-              <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg className="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-                </svg>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-gray-600">LinkedIn</p>
-                <a href="https://www.linkedin.com/in/joyce-fu-30a6b7288/" target="_blank" className="text-lg font-bold text-gray-800 hover:text-yellow-500">
-                  joyce-fu-30a6b7288
-                </a>
-              </div>
-            </div>
+        {/* Description */}
+        <p className="text-gray-600 mb-12 max-w-2xl leading-relaxed">
+          I'd love to hear from you! Whether you have a question, project idea, or just want to connect, feel free to reach out. I'll get back to you as soon as possible.
+        </p>
 
-            {/* Resume */}
-            <div className="flex items-center gap-6 p-6 bg-white rounded-lg hover:shadow-md transition">
-              <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
-                <svg className="w-8 h-8 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-8-6z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                </svg>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-gray-600">Resume</p>
-                <a href="/Joyce_Fu___Resume.pdf" download className="text-lg font-bold text-gray-800 hover:text-yellow-500">
-                  Download PDF
-                </a>
-              </div>
+        {/* Contact Cards */}
+        <div className="grid md:grid-cols-3 gap-12 mb-16">
+          {/* Email */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-10 h-10 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
             </div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2" style={{ fontFamily: "'Arvo', serif" }}>EMAIL</h3>
+            <a href="mailto:jf5456@nyu.edu" className="text-gray-600 hover:text-yellow-500 transition">
+              jf5456@nyu.edu
+            </a>
           </div>
 
-          <p className="text-center text-gray-600 mt-12">
-            I typically respond within 24 hours. Looking forward to hearing from you!
+          {/* Phone */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg className="w-10 h-10 text-gray-800" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2" style={{ fontFamily: "'Arvo', serif" }}>PHONE</h3>
+            <a href="tel:+16284882511" className="text-gray-600 hover:text-yellow-500 transition">
+              +1 (628) 488-2511
+            </a>
+          </div>
+
+          {/* LinkedIn */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="bg-gray-800 rounded-md flex items-center justify-center" style={{ width: '40px', height: '40px' }}>
+                <svg className="w-7 h-7" viewBox="0 0 448 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="448" height="512" rx="80" fill="#2c2c2c"/>
+                  <path d="M100.28 448H7.4V148.9h92.88z" fill="#FFC107"/>
+                  <circle cx="53.6" cy="53.6" r="53.6" fill="#FFC107"/>
+                  <path d="M447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.7 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.4s1.2-242.4 0-267.1h92.4v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.7 39.8 106.7 125.4V448z" fill="#FFC107"/>
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2" style={{ fontFamily: "'Arvo', serif" }}>LINKEDIN</h3>
+            <a href="https://linkedin.com/in/jia-yin-fu" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-500 transition">
+              jia-yin-fu
+            </a>
+          </div>
+        </div>
+
+        {/* Thank you message */}
+        <div className="text-center">
+          <p className="text-2xl font-bold text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>
+            THANKS FOR PATIENCE!
           </p>
         </div>
       </div>

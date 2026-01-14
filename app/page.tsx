@@ -2,14 +2,27 @@
 export default function Home() {
   return (
     <main className="w-full min-h-screen bg-gray-100 text-gray-800 flex items-center justify-center pr-32">
+      {/* Left yellow bar */}
+      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 w-8 h-80 bg-yellow-400 z-40"></div>
+      
+      {/* Right yellow bar */}
+      <div className="fixed right-0 top-1/2 transform -translate-y-1/2 w-8 h-80 bg-yellow-400 z-40"></div>
+
       <section className="hero-section px-8 py-12 max-w-7xl mx-auto w-full">
         <div className="flex items-center justify-between gap-16 md:gap-8">
-          <div className="flex-1">
-            <p className="hero-title text-yellow-500 mb-2">HI THERE!</p>
-            <h1 className="hero-subtitle">I'M JOYCE</h1>
-            <p className="hero-meta">CYBERSECURITY | DEVELOPER | UI/UX DESIGNER</p>
-            <p className="text-lg leading-relaxed mt-4 text-gray-700 max-w-lg">
-              Master's student in Cybersecurity at NYU Tandon with full-stack development experience, AI/ML background, and a track record of building impactful web applications and launching startups.
+          <div className="flex-1 pl-12">
+            <div>
+              <p className="hero-title text-yellow-500 mb-2 text-3xl font-bold">HI THERE!</p>
+              <div className="w-32 h-1 bg-yellow-500 mb-4"></div>
+            </div>
+            <h1 className="hero-subtitle font-serif text-6xl font-bold mb-2" style={{
+              fontFamily: "'Arvo', serif",
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase'
+            }}>I'M JOYCE</h1>
+            <p className="hero-meta bg-black text-white px-3 py-2 inline-block text-sm font-bold mb-6">UX/UI DESIGNER | SOFTWARE ENGINEER | SECURITY ENTHUSIAST</p>
+            <p className="text-lg leading-relaxed mt-6 text-gray-700 max-w-lg">
+              Master's student in Computer Science at NYU Tandon seeking UX/UI and software engineering roles. Full-stack development, information security, and AI/ML expertise with hands-on experience in Kali Linux and penetration testing.
             </p>
             <a href="/about" className="btn-primary mt-6 inline-block">MORE ABOUT ME</a>
           </div>
