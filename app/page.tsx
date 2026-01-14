@@ -30,7 +30,7 @@ export default function Page() {
       {/* About Me */}
       <section id="about" className="bg-gray-100 px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">🧍 About Me yo</h2>
+          <h2 className="text-3xl font-bold mb-4">🧍 About Me</h2>
           <p>
             I'm currently pursuing a Master’s in Cybersecurity at NYU Tandon. Previously interned at Yuanta Securities,
             conducted phishing detection research, and led full-stack projects that combined AI and security.
