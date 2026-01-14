@@ -28,7 +28,7 @@ export default function About() {
               <div className="bg-yellow-400 rounded-full w-32 h-32 flex items-center justify-center text-center shadow-lg">
                 <div>
                   <p className="text-4xl font-bold text-gray-800">2</p>
-                  <p className="text-sm font-semibold text-gray-800">Masters</p>
+                  <p className="text-sm font-semibold text-gray-800">Bachelors</p>
                 </div>
               </div>
               <div className="bg-gray-800 rounded-full w-32 h-32 flex items-center justify-center text-center shadow-lg">
