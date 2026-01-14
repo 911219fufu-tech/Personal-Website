@@ -54,33 +54,6 @@ pnpm dev
 
 Open http://localhost:3000 in your browser.
 
-## Push to GitHub
-
-If git is not initialized yet:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-Create a repository on GitHub via the web UI or the `gh` CLI. Example using `gh`:
-
-```bash
-gh repo create USERNAME/REPO --public --source=. --remote=origin --push
-```
-
-Or add remote manually and push:
-
-```bash
-git remote add origin git@github.com:USERNAME/REPO.git   # SSH
-# or
-git remote add origin https://github.com/USERNAME/REPO.git  # HTTPS
-git branch -M main
-git push -u origin main
-```
-
-If you plan to use SSH, ensure your SSH key is added to GitHub. For HTTPS, use a Personal Access Token when prompted.
 
 ## Contributing
 
