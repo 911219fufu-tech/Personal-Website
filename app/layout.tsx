@@ -46,6 +46,7 @@ export default function RootLayout({
         <a href="#skills" className="block hover:text-blue-500">Skills</a>
         <a href="#life" className="block hover:text-blue-500">Life</a>
         <a href="#contact" className="block hover:text-blue-500">Contact</a>
+        <a href="/resume" className="block hover:text-blue-500">Resume</a>
       </nav>
 
             <p className="text-sm mt-8 text-gray-500 dark:text-gray-400">
