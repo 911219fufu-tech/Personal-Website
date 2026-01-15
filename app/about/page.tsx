@@ -13,13 +13,13 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="col-span-2">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I'm a Master's student in Computer Science at NYU Tandon, passionate about creating secure, user-centric digital experiences. With a background in full-stack development, UI/UX design, and information security, I've launched my own e-commerce business and contributed to several high-impact projects spanning AI, web development, and cybersecurity.
+              I'm a Master's student in Computer Science at NYU Tandon, passionate about building beautiful and functional websites. My main focus is front-end web development—turning Figma designs or wireframes into real, interactive web pages using HTML, CSS, and JavaScript (and frameworks like React/Next.js).
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              My expertise spans front-end and back-end development, UI/UX design with Figma, information security tools (Kali Linux, penetration testing), and data analysis. I thrive at the intersection of user experience and security, with strong interest in SWE and UX/UI roles while maintaining hands-on security knowledge.
+              I enjoy collaborating with designers and product teams to bring ideas to life on the web. My strengths are in translating design specs into pixel-perfect, responsive, and accessible websites. I love the process of coding up layouts, animations, and user interactions, and making sure everything works smoothly across devices.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              I love hiking, photography, and documenting travel experiences through design and writing. Beyond tech, I'm passionate about mentoring others and building inclusive communities in tech.
+              Outside of coding, I enjoy hiking, photography, and documenting travel experiences. I'm also passionate about mentoring others and building inclusive communities in tech.
             </p>
           </div>
           

@@ -20,9 +20,9 @@ export default function Home() {
               letterSpacing: '0.05em',
               textTransform: 'uppercase'
             }}>I'M JOYCE</h1>
-            <p className="hero-meta bg-black text-white px-3 py-2 inline-block text-sm font-bold mb-6">UX/UI DESIGNER | SOFTWARE ENGINEER | SECURITY ENTHUSIAST</p>
+            <p className="hero-meta bg-black text-yellow-400 px-3 py-2 inline-block text-sm font-bold mb-6">FRONT-END DEVELOPER | SOFTWARE ENGINEER</p>
             <p className="text-lg leading-relaxed mt-6 text-gray-700 max-w-lg">
-              Master's student in Computer Science at NYU Tandon seeking UX/UI and software engineering roles. Full-stack development, information security, and AI/ML expertise with hands-on experience in Kali Linux and penetration testing.
+              I'm a Master's student in Computer Science at NYU Tandon, actively looking for front-end developer and software engineer (SWE) positions. I love turning Figma designs and wireframes into beautiful, responsive, and interactive websites using HTML, CSS, JavaScript, and React/Next.js.
             </p>
             <a href="/about" className="btn-primary mt-6 inline-block">MORE ABOUT ME</a>
           </div>
