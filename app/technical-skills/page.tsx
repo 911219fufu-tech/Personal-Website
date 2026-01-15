@@ -35,7 +35,7 @@ export default function TechnicalSkills() {
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold mb-12 text-gray-800">TECHNICAL SKILLS</h2>
+        <h2 className="text-5xl font-bold mb-12 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>TECHNICAL SKILLS</h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           {skillCategories.map((category, index) => (

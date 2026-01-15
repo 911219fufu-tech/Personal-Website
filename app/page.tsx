@@ -12,7 +12,14 @@ export default function Home() {
         <div className="flex items-center justify-between gap-16 md:gap-8">
           <div className="flex-1 pl-12">
             <div>
-              <p className="hero-title text-yellow-500 mb-2 text-3xl font-bold">HI THERE!</p>
+              <p 
+                className="hero-title text-yellow-500 mb-2 text-3xl font-bold"
+                style={{
+                  fontFamily: "'Arvo', serif",
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+              >HI THERE!</p>
               <div className="w-32 h-1 bg-yellow-500 mb-4"></div>
             </div>
             <h1 className="hero-subtitle font-serif text-6xl font-bold mb-2" style={{

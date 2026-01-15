@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="flex items-center gap-0 mb-4">
           <div className="h-1 w-16 bg-gray-800"></div>
           <div className="w-3 h-3 rounded-full bg-gray-800"></div>
-          <h2 className="text-6xl font-bold text-gray-800 ml-6" style={{ fontFamily: "'Arvo', serif" }}>CONTACT</h2>
+          <h2 className="text-6xl font-bold text-gray-800 ml-6" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>CONTACT</h2>
         </div>
 
         {/* Subtitle */}

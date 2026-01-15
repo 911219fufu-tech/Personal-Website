@@ -8,7 +8,7 @@ export default function About() {
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold mb-8 text-gray-800">ABOUT ME</h2>
+        <h2 className="text-5xl font-bold mb-8 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>ABOUT ME</h2>
         
         <div className="grid md:grid-cols-3 gap-12">
           <div className="col-span-2">

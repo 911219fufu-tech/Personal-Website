@@ -7,8 +7,8 @@ export const metadata = {
 export default function Projects() {
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold mb-12 text-gray-800">PROJECTS</h2>
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-5xl font-bold mb-12 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>PROJECTS</h2>
         
         <div className="project-grid">
           <article className="project-card">
