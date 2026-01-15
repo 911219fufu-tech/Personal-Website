@@ -20,11 +20,11 @@ export default function Home() {
               letterSpacing: '0.05em',
               textTransform: 'uppercase'
             }}>I'M JOYCE</h1>
-            <p className="hero-meta bg-black text-yellow-400 px-3 py-2 inline-block text-sm font-bold mb-6">FRONT-END DEVELOPER | SOFTWARE ENGINEER</p>
+            <p className="hero-meta bg-black text-yellow-400 px-3 py-2 inline-block text-sm font-bold mb-6" style={{ fontFamily: 'Gill Sans, sans-serif' }}>FRONT-END DEVELOPER | SOFTWARE ENGINEER</p>
             <p className="text-lg leading-relaxed mt-6 text-gray-700 max-w-lg">
-              I'm a Master's student in Computer Science at NYU Tandon, actively looking for front-end developer and software engineer (SWE) positions. I love turning Figma designs and wireframes into beautiful, responsive, and interactive websites using HTML, CSS, JavaScript, and React/Next.js.
+              I'm a Master's student in <b>Computer Science</b> at NYU Tandon, actively looking for <b>Front-End Developer</b> and <b>Software Engineer</b> positions. I love turning Figma designs and wireframes into beautiful, responsive, and interactive websites using HTML, CSS, JavaScript, and React/Next.js.
             </p>
-            <a href="/about" className="btn-primary mt-6 inline-block">MORE ABOUT ME</a>
+            <a href="/about" className="btn-primary mt-6 inline-block" style={{ fontFamily: 'Gill Sans, sans-serif' }}>MORE ABOUT ME</a>
           </div>
           <div className="flex-shrink-0 hidden md:block">
             <img src="/avatar.png" alt="Joyce Fu" className="w-80 h-80 rounded-full object-cover" />
