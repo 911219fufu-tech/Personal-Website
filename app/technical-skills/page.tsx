@@ -7,37 +7,28 @@ export const metadata = {
 export default function TechnicalSkills() {
   const skillCategories = [
     {
-      name: "Programming Languages",
-      skills: ["Python", "Java", "C", "C++", "C#", "JavaScript", "HTML", "CSS", "SQL", "MATLAB"]
+      name: "Front-End Development",
+      skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Responsive Design", "Cross-Browser Compatibility"]
     },
     {
-      name: "Web Development",
-      skills: ["React", "Node.js", "Next.js", "TypeScript", "Tailwind CSS", "RESTful APIs", "MySQL", "MongoDB"]
+      name: "Software Engineering",
+      skills: ["Node.js", "RESTful APIs", "MySQL", "Git", "GitHub", "Collaborative Development"]
     },
     {
-      name: "Design & UI/UX",
-      skills: ["Figma", "UI/UX Design", "Wireframing", "Prototyping", "User Research", "Design Systems"]
+      name: "Design Implementation",
+      skills: ["Figma", "Pixel-Perfect Coding", "Wireframing", "Prototyping"]
     },
     {
-      name: "Information Security",
-      skills: ["Kali Linux", "Burp Suite", "Penetration Testing", "Network Security", "Vulnerability Assessment", "Ethical Hacking"]
-    },
-    {
-      name: "AI/ML & Data Analysis",
-      skills: ["PyTorch", "Machine Learning", "Data Analysis", "Data Visualization", "Statistical Analysis", "TensorFlow"]
-    },
-    {
-      name: "Tools & Platforms",
-      skills: ["Git", "GitHub", "Docker", "AWS", "Firebase", "Visual Studio Code", "Jira"]
+      name: "Additional Experience",
+      skills: ["Python", "Java", "C/C++", "Information Security (Kali Linux, Pen Testing)", "AI/ML (PyTorch, TensorFlow)"]
     }
   ];
 
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold mb-12 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>TECHNICAL SKILLS</h2>
-        
-        <div className="grid md:grid-cols-2 gap-12">
+      <div className="max-w-4xl ml-auto mr-0">
+        <h2 className="text-5xl font-bold mb-12 text-gray-800 text-right" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>TECHNICAL SKILLS</h2>
+        <div className="grid md:grid-cols-2 gap-12 text-right">
           {skillCategories.map((category, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-yellow-400">
@@ -58,23 +49,23 @@ export default function TechnicalSkills() {
         </div>
 
         <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">Certifications & Achievements</h3>
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">Career Focus</h3>
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-start">
               <span className="text-yellow-400 font-bold mr-4">•</span>
-              <span>Full-Stack Development Proficiency - Demonstrated through multiple production applications</span>
+              <span><b>Front-End Developer</b> is my top priority—skilled in React, Next.js, HTML, CSS, JavaScript, TypeScript, Tailwind CSS, and Figma implementation.</span>
             </li>
             <li className="flex items-start">
               <span className="text-yellow-400 font-bold mr-4">•</span>
-              <span>UI/UX Design Excellence - Created user interfaces for 4+ major projects with high usability standards</span>
+              <span>Experienced in building responsive, pixel-perfect, and cross-browser compatible websites from design specs.</span>
             </li>
             <li className="flex items-start">
               <span className="text-yellow-400 font-bold mr-4">•</span>
-              <span>Information Security Knowledge - Hands-on experience with penetration testing and vulnerability assessment</span>
+              <span><b>Software Engineer</b> is my secondary focus—proficient in backend, APIs, and collaborative development using Git, Node.js, and MySQL.</span>
             </li>
             <li className="flex items-start">
               <span className="text-yellow-400 font-bold mr-4">•</span>
-              <span>Entrepreneurship - Founded and successfully operated e-commerce business with strong technical backend</span>
+              <span>Additional experience in security, data analysis, and full-stack projects.</span>
             </li>
           </ul>
         </div>
