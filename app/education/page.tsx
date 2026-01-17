@@ -8,13 +8,14 @@ export default function Education() {
   const [openNYUCourses, setOpenNYUCourses] = useState(false);
   const [openSFSUCourses, setOpenSFSUCourses] = useState(false);
   const [openSFSUDean, setOpenSFSUDean] = useState(false);
+  const [openSFSUCertificate, setOpenSFSUCertificate] = useState(false);
   // GPA bar animation state (for both GPA bars)
   const [gpaBar1, setGpaBar1] = useState(0); // for NYU card
   const [gpaBar2, setGpaBar2] = useState(0); // for SFSU/FCU card
   useEffect(() => {
     // Animate both bars to their target width after mount
-    const timeout1 = setTimeout(() => setGpaBar1(97), 200); // 3.9/4.0 = 97%
-    const timeout2 = setTimeout(() => setGpaBar2(97), 200);
+    const timeout1 = setTimeout(() => setGpaBar1(100), 200); // 4.0/4.0 = 100%
+    const timeout2 = setTimeout(() => setGpaBar2(97), 200); // 3.9/4.0 = 97%
     return () => {
       clearTimeout(timeout1);
       clearTimeout(timeout2);
@@ -66,7 +67,7 @@ export default function Education() {
                   </span>
                   GPA
                 </div>
-                <div>3.9 / 4.0</div>
+                <div>4.0 / 4.0</div>
                 <div className="w-full h-2 bg-gray-200 rounded-full mt-2 overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 rounded-full transition-all duration-1000"
@@ -207,6 +208,46 @@ export default function Education() {
                       <li><span className="font-bold">FCU</span> — Spring 2023</li>
                     </ul>
                   </div>
+                )}
+              </div>
+              {/* Certificate Area */}
+              <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
+                  <span className="inline-block text-yellow-400">
+                    {/* Certificate: Award icon */}
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 3a5 5 0 0 1 0 10c-.34 0-.67-.03-1-.08V21l-4-2-4 2v-8.08A5.002 5.002 0 0 1 7 3h10zm-5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                  </span>
+                  Certificate
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>4 certificates</span>
+                  <button
+                    className="ml-2 px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded hover:bg-yellow-200 transition"
+                    onClick={() => setOpenSFSUCertificate((v) => !v)}
+                    aria-expanded={openSFSUCertificate}
+                  >
+                    {openSFSUCertificate ? "Hide" : "Details"}
+                  </button>
+                </div>
+                {openSFSUCertificate && (
+                  <ul className="list-disc list-inside text-gray-700 text-sm space-y-2 mt-2">
+                    <li>
+                      <span className="font-semibold">Innovation News Reading Certificate</span>
+                      <div className="ml-4 text-gray-500 text-xs">FCU, Dec. 2021</div>
+                    </li>
+                    <li>
+                      <span className="font-semibold">Programming Fundamentals Certificate</span>
+                      <div className="ml-4 text-gray-500 text-xs">FCU, Jan. 2022</div>
+                    </li>
+                    <li>
+                      <span className="font-semibold">AWS Academy Graduate - AWS Academy Cloud Foundations</span>
+                      <div className="ml-4 text-gray-500 text-xs">Amazon Web Services (AWS), Dec. 2022</div>
+                    </li>
+                    <li>
+                      <span className="font-semibold">Value Proposition and Customer Discovery</span>
+                      <div className="ml-4 text-gray-500 text-xs">University of California, Irvine, May 2025</div>
+                    </li>
+                  </ul>
                 )}
               </div>
             </div>
