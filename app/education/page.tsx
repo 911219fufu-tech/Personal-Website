@@ -57,7 +57,7 @@ export default function Education() {
                   </span>
                   Degree
                 </div>
-                <div>Bachelor's in Computer Science</div>
+                <div>Pursuing Master's in Computer Science</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
                 <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
@@ -84,16 +84,6 @@ export default function Education() {
                   Duration
                 </div>
                 <div>Sep 2025 - May 2027 (Expected)</div>
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
-                  <span className="inline-block text-yellow-400">
-                    {/* Dean's List: Ribbon */}
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
-                  </span>
-                  Dean's List
-                </div>
-                <div>8 times</div>
               </div>
             </div>
             {/* Accordion for Relevant Courses */}
@@ -255,8 +245,8 @@ export default function Education() {
             <div className="mt-4">
               <button
                 className="w-full flex items-center justify-between bg-gray-50 rounded-xl p-4 border border-gray-200 font-semibold text-gray-800 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
-                onClick={() => setOpenNYUCourses((v) => !v)}
-                aria-expanded={openNYUCourses}
+                onClick={() => setOpenSFSUCourses((v) => !v)}
+                aria-expanded={openSFSUCourses}
               >
                 <span className="flex items-center gap-2">
                   <span className="inline-block text-yellow-400">
@@ -265,11 +255,54 @@ export default function Education() {
                   </span>
                   Relevant Courses
                 </span>
-                <svg className={`transform transition-transform ${openNYUCourses ? 'rotate-180' : ''}`} width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                <svg className={`transform transition-transform ${openSFSUCourses ? 'rotate-180' : ''}`} width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
               </button>
-              {openNYUCourses && (
+              {openSFSUCourses && (
                 <div className="px-4 py-3 text-gray-700">
-                  Information Visualization, Human Computer Interaction
+                  <div className="space-y-1 grid grid-cols-2 gap-x-6">
+                    <div className="flex items-center gap-2">
+                      <span className="text-blue-500">
+                        {/* Web icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M3 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4zm2 1v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h6v2H7v-2z"/></svg>
+                      </span>
+                      Web Software Development
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-pink-500">
+                        {/* User icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                      </span>
+                      Human-Computer Interaction
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-500">
+                        {/* Gear icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19.14,12.94a7.07,7.07,0,0,0,.06-1,7.07,7.07,0,0,0-.06-1l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a7.28,7.28,0,0,0-1.73-1l-.38-2.65A.5.5,0,0,0,13,2h-4a.5.5,0,0,0-.5.42l-.38,2.65a7.28,7.28,0,0,0-1.73,1l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.64l2.11,1.65a7.07,7.07,0,0,0-.06,1,7.07,7.07,0,0,0,.06,1L2.86,14.59a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.61.22l2.49-1a7.28,7.28,0,0,0,1.73,1l.38,2.65A.5.5,0,0,0,9,22h4a.5.5,0,0,0,.5-.42l.38-2.65a7.28,7.28,0,0,0,1.73-1l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                      </span>
+                      Software Engineering
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-500">
+                        {/* Function/algorithm icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17 3a5 5 0 0 1 0 10c-.34 0-.67-.03-1-.08V21l-4-2-4 2v-8.08A5.002 5.002 0 0 1 7 3h10zm-5 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+                      </span>
+                      Data Structures & Algorithms
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-cyan-500">
+                        {/* Network icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 0 0-8 0v4a4 4 0 0 0 2 3.46V17a2 2 0 0 0 4 0v-2.54A4 4 0 0 0 16 11z"/></svg>
+                      </span>
+                      Computer Networks
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-gray-500">
+                        {/* Cloud icon */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 8.36 4 5.33 6.59 4.65 10.04 2.34 10.36 0.5 12.36 0.5 14.75c0 2.39 1.84 4.39 4.15 4.71C6.59 21.41 9.13 23 12 23c2.87 0 5.41-1.59 7.35-3.54 2.31-.32 4.15-2.32 4.15-4.71 0-2.39-1.84-4.39-4.15-4.71z"/></svg>
+                      </span>
+                      Cloud Computing
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
