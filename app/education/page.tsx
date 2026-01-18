@@ -153,7 +153,7 @@ export default function Education() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-4">
+            <div className="grid md:grid-cols-2 gap-6 mb-4 items-start">
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
                 <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
                   <span className="inline-block text-yellow-400">
@@ -202,14 +202,17 @@ export default function Education() {
                   <span>5 semesters</span>
                   <button
                     className="ml-2 px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded hover:bg-yellow-200 transition"
-                    onClick={() => setOpenSFSUDean((v) => !v)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setOpenSFSUDean((v) => !v);
+                    }}
                     aria-expanded={openSFSUDean}
                   >
                     {openSFSUDean ? "Hide" : "Details"}
                   </button>
                 </div>
                 {openSFSUDean && (
-                  <div className="mt-2 text-gray-700 text-sm">
+                  <div className="absolute left-0 top-full w-full mt-2 z-10 bg-white rounded-xl shadow-lg border border-gray-200 p-4 text-gray-700 text-sm">
                     <div className="font-semibold mb-1">Dean's List</div>
                     <ul className="list-disc list-inside mb-2">
                       <li><span className="font-bold">FCU</span> — Spring 2023</li>
