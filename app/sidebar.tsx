@@ -13,7 +13,6 @@ export default function Sidebar() {
     { href: '/projects', label: 'PROJECT' },
     { href: '/education', label: 'EDUCATION' },
     { href: '/technical-skills', label: 'TECHNICAL SKILLS' },
-    { href: '/resume', label: 'RESUME' },
     { href: '/contact', label: 'CONTACT' },
   ];
 

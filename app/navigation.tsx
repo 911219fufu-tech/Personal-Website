@@ -11,7 +11,6 @@ export default function Navigation() {
     { href: '/projects', label: 'Projects', icon: 'projects' },
     { href: '/education', label: 'Education', icon: 'education' },
     { href: '/technical-skills', label: 'Technical Skills', icon: 'skills' },
-    { href: '/resume', label: 'Resume', icon: 'resume' },
     { href: '/contact', label: 'Contact', icon: 'contact' },
   ];
 
@@ -44,13 +43,13 @@ export default function Navigation() {
       case 'education':
         return (
           <svg className="w-6 h-6" fill={color} viewBox="0 0 24 24">
-            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+            <path d="M12 2L2 7v2h20V7L12 2zm0 2.18L18.6 7H5.4L12 4.18zM4 10v10h4v-6h8v6h4V10H4zm6 8v-4h4v4h-4z"/>
           </svg>
         );
       case 'skills':
         return (
           <svg className="w-6 h-6" fill={color} viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            <path d="M19.14,12.94a7.07,7.07,0,0,0,.06-1,7.07,7.07,0,0,0-.06-1l2.11-1.65a.5.5,0,0,0,.12-.64l-2-3.46a.5.5,0,0,0-.61-.22l-2.49,1a7.28,7.28,0,0,0-1.73-1l-.38-2.65A.5.5,0,0,0,13,2h-2a.5.5,0,0,0-.5.42l-.38,2.65a7.28,7.28,0,0,0-1.73,1l-2.49-1a.5.5,0,0,0-.61.22l-2,3.46a.5.5,0,0,0,.12.64l2.11,1.65a7.07,7.07,0,0,0-.06,1,7.07,7.07,0,0,0,.06,1L2.86,14.59a.5.5,0,0,0-.12.64l2,3.46a.5.5,0,0,0,.61.22l2.49-1a7.28,7.28,0,0,0,1.73,1l.38,2.65A.5.5,0,0,0,11,22h2a.5.5,0,0,0,.5-.42l.38-2.65a7.28,7.28,0,0,0,1.73-1l2.49,1a.5.5,0,0,0,.61-.22l2-3.46a.5.5,0,0,0-.12-.64ZM12,15.5A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
           </svg>
         );
       case 'resume':
