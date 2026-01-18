@@ -32,7 +32,6 @@ This is a modern personal website built with Next.js, React, and Tailwind CSS. I
 
 ## 📸 Preview
 
-![Portfolio Screenshot]
 
 ## 🛠 Tech Stack
 
@@ -48,7 +47,7 @@ I chose a modern stack to ensure scalability, type safety, and great developer e
 ## ✨ Key Features
 
 - **Responsive Design:** Mobile-first approach, looks great on all devices.
-- **Accessibility (a11y):** Follows WCAG guidelines, semantic HTML, and keyboard navigation support. *(呼應我的 HCI 課程背景)*
+- **Accessibility (a11y):** Follows WCAG guidelines, semantic HTML, and keyboard navigation support. 
 - **Dark Mode:** System preference detection with manual toggle.
 - **SEO Optimized:** Meta tags, Open Graph, and semantic structure.
 - **Performance:** 100/100 Lighthouse score on Performance and Best Practices.
