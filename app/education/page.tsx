@@ -23,9 +23,9 @@ export default function Education() {
   }, []);
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold mb-12 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>EDUCATION</h2>
-        <div className="space-y-10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-5xl font-bold mb-8 text-gray-800" style={{ fontFamily: "'Arvo', serif", letterSpacing: '0.05em' }}>EDUCATION</h2>
+        <div className="max-w-4xl ml-0 space-y-10">
           {/* NYU */}
           <div className="relative bg-white/90 p-8 rounded-2xl border border-gray-200 shadow-lg overflow-hidden">
             <div className="flex items-center gap-4 mb-6">
