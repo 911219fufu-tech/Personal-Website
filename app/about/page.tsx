@@ -1,4 +1,6 @@
 // app/about/page.tsx
+import React from 'react';
+
 export const metadata = {
   title: "About - Joyce Fu",
   description: "About Joyce Fu",
