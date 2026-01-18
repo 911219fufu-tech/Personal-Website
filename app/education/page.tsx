@@ -104,7 +104,29 @@ export default function Education() {
               </button>
               {openNYUCourses && (
                 <div className="px-4 py-3 text-gray-700">
-                  Information Visualization, Human Computer Interaction
+                  <div className="space-y-1 grid grid-cols-2 gap-x-6">
+                    <div className="flex items-center gap-2">
+                      <span className="text-blue-500">
+                        {/* Chart icon for InfoVis */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2v-4H7v4zm4 0h2V7h-2v10zm4 0h2v-2h-2v2zm4 2H3v2h18v-2z"/></svg>
+                      </span>
+                      Information Visualization
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-purple-500">
+                        {/* User icon for HCI */}
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                      </span>
+                      Human Computer Interaction
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-600">
+                        {/* Outline lock icon for security */}
+                        <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="8" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                      </span>
+                      Application Security
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
