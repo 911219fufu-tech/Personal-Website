@@ -4,6 +4,7 @@ import React, { useState } from "react";
 export default function Projects() {
   const [showDetail1, setShowDetail1] = useState(false);
   const [showDetail2, setShowDetail2] = useState(false);
+  const [showDetail3, setShowDetail3] = useState(false);
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
       <div className="max-w-6xl mx-auto">
@@ -16,8 +17,10 @@ export default function Projects() {
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-center gap-2 mb-1">
-                <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Mobile App</span>
-                <span className="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">AI</span>
+                <span className="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold">Figma</span>
+                <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Next.js</span>
+                <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Tailwind CSS</span>
+                <span className="inline-block bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">OpenAI API</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-1">UNLMED — AI-Powered Sports Injury Prevention</h3>
               <p className="text-xs text-gray-600 mb-1 font-semibold">Lead Designer & Full-stack Developer (In Development)</p>
@@ -91,24 +94,34 @@ export default function Projects() {
           {/* Project Card 3 */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.025] hover:shadow-2xl transition-all duration-300 flex flex-col">
             <div className="h-64 w-full bg-gray-100 flex items-center justify-center">
-              <img src="/project3.png" alt="Linux File System" className="object-cover h-full w-full" style={{maxHeight:'16rem'}}/>
+              <img src="/ReadyRecipe.png" alt="Ready Recipe" className="object-cover h-full w-full object-top" style={{maxHeight:'16rem'}}/>
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-center gap-2 mb-1">
-                <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">System</span>
-                <span className="inline-block bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-semibold">C/C++</span>
+                <span className="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold">Figma</span>
+                <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">UI/UX</span>
+                <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">Prototyping</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-1">Linux File System Implementation</h3>
-              <p className="text-xs text-gray-500 mb-1">Mar 2024 - May 2024</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-1">Ready Recipe — Grocery-Integrated Cooking Platform</h3>
+              <p className="text-xs text-gray-600 mb-1 font-semibold">UI/UX Designer & Product Researcher</p>
               <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2">
-                <li>Block-based file system, custom volume/inode</li>
-                <li>Command-line interface for file ops</li>
-                <li>Buffer layer, bitmap space tracking</li>
-                <li>Full test & documentation</li>
+                <li><b>UI/UX, Prototyping, Product Research</b></li>
+                <li>Seamless recipe-to-cart experience for home cooks</li>
               </ul>
-              <div className="mt-auto flex gap-2">
-                <a href="#" className="text-gray-500 hover:text-gray-800 text-sm font-medium">GitHub</a>
-              </div>
+              <button
+                className="self-start mb-2 px-3 py-1 bg-gray-200 rounded text-xs text-gray-700 hover:bg-gray-300 transition"
+                onClick={() => setShowDetail3((prev) => !prev)}
+              >
+                {showDetail3 ? "Hide Details" : "Show Details"}
+              </button>
+              {showDetail3 && (
+                <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2 animate-fade-in">
+                  <li><b>End-to-End User Experience Design:</b> Conducted user research to identify the friction between recipe discovery and ingredient procurement, designing a seamless "Recipe-to-Cart" flow in Figma.</li>
+                  <li><b>Responsive Layout Design:</b> Engineered a comprehensive design system for both Mobile and Desktop interfaces, ensuring intuitive navigation and accessibility across different screen resolutions.</li>
+                  <li><b>Interactive Prototyping:</b> Developed a high-fidelity interactive prototype in Figma to simulate the complete user journey, from searching for recipes to real-time order tracking of groceries.</li>
+                  <li><b>Component-Based Design System:</b> Built a reusable library of UI components (buttons, cards, navigation bars) to ensure visual consistency and to facilitate future front-end development.</li>
+                </ul>
+              )}
             </div>
           </div>
 
