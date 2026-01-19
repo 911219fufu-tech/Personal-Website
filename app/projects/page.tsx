@@ -128,7 +128,7 @@ export default function Projects() {
           {/* Project Card 4 */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.025] hover:shadow-2xl transition-all duration-300 flex flex-col">
             <div className="h-64 w-full bg-gray-100 flex items-center justify-center">
-              <img src="/project4.png" alt="Police Demographics" className="object-cover h-full w-full" style={{maxHeight:'16rem'}}/>
+              <img src="/PoliceShooting.png" alt="Police Demographics" className="object-cover object-top h-full w-full" style={{maxHeight:'16rem'}}/>
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-center gap-2 mb-1">
