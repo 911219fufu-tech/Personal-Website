@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 
 export default function Projects() {
+  const [showDetail1, setShowDetail1] = useState(false);
   const [showDetail2, setShowDetail2] = useState(false);
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
@@ -19,15 +20,28 @@ export default function Projects() {
                 <span className="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">AI</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-1">UNLMED — AI-Powered Sports Injury Prevention</h3>
+              <p className="text-xs text-gray-600 mb-1 font-semibold">Lead Designer & Full-stack Developer (In Development)</p>
               <p className="text-xs text-gray-500 mb-1">Feb 2025 - Jun 2025</p>
               <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2">
-                <li>UI/UX with Figma for wearable sports app</li>
-                <li>Interactive prototypes for athlete/trainer/coach</li>
-                <li>AI-driven injury prevention & recovery</li>
-                <li>Mobile app in development</li>
+                <li><b>UI/UX, Full-stack, Data Visualization</b></li>
+                <li>Wearable sports app for athletes, coaches, and trainers</li>
               </ul>
+              <button
+                className="self-start mb-2 px-3 py-1 bg-gray-200 rounded text-xs text-gray-700 hover:bg-gray-300 transition"
+                onClick={() => setShowDetail1(!showDetail1)}
+              >
+                {showDetail1 ? "Hide Details" : "Show Details"}
+              </button>
+              {showDetail1 && (
+                <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2 animate-fade-in">
+                  <li><b>User-Centric UI/UX Design:</b> Spearheaded the end-to-end design process in Figma, creating high-fidelity prototypes for three distinct user personas (Athletes, Coaches, and Trainers).</li>
+                  <li><b>System Architecture Planning:</b> Architected the full-stack infrastructure using Next.js and Node.js, focusing on seamless data synchronization between wearable devices and the web dashboard.</li>
+                  <li><b>Data Visualization Design:</b> Engineered complex data dashboards to visualize real-time biometric signals, such as EMG muscle fatigue and HRV, ensuring professional medical data is intuitive for users.</li>
+                  <li><b>Front-end Implementation (In Progress):</b> Currently translating the design system into a functional web application, utilizing Tailwind CSS to ensure pixel-perfect fidelity and responsive performance.</li>
+                </ul>
+              )}
               <div className="mt-auto flex gap-2">
-                <a href="#" className="text-gray-500 hover:text-gray-800 text-sm font-medium">Figma</a>
+                <a href="https://www.figma.com/proto/ACsnCxm5Q88YNWgQsbyD6E/UNLMTD_FINAL?node-id=107-249&t=3RU2M2ArEIVYu69G-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=107%3A249&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-800 text-sm font-medium">Figma Showcase</a>
               </div>
             </div>
           </div>
@@ -46,6 +60,7 @@ export default function Projects() {
                 <span className="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold">Figma</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-1">Joystick Journal — Game Review Platform</h3>
+              <p className="text-xs text-gray-600 mb-1 font-semibold">Frontend Developer</p>
               <p className="text-xs text-gray-500 mb-1">Sep 2024 - Jan 2025</p>
               <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2">
                 <li><b>React Frontend Development</b>, UI/UX design, interactive features, RESTful API integration</li>
