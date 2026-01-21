@@ -5,6 +5,7 @@ export default function Projects() {
   const [showDetail1, setShowDetail1] = useState(false);
   const [showDetail2, setShowDetail2] = useState(false);
   const [showDetail3, setShowDetail3] = useState(false);
+  const [showDetail4, setShowDetail4] = useState(false);
   return (
     <main className="w-full min-h-screen bg-gray-100 px-8 py-16">
       <div className="max-w-6xl mx-auto">
@@ -104,6 +105,7 @@ export default function Projects() {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-1">Ready Recipe — Grocery-Integrated Cooking Platform</h3>
               <p className="text-xs text-gray-600 mb-1 font-semibold">UI/UX Designer & Product Researcher</p>
+              <p className="text-xs text-gray-500 mb-1">Sep. 2024 - Jan. 2025</p>
               <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2">
                 <li><b>UI/UX, Prototyping, Product Research</b></li>
                 <li>Seamless recipe-to-cart experience for home cooks</li>
@@ -122,6 +124,9 @@ export default function Projects() {
                   <li><b>Component-Based Design System:</b> Built a reusable library of UI components (buttons, cards, navigation bars) to ensure visual consistency and to facilitate future front-end development.</li>
                 </ul>
               )}
+              <div className="mt-auto flex gap-2">
+                <a href="https://www.figma.com/proto/rbPVxdxRR8rQU8L2hB6xKl/ReadyRecipe?node-id=1-2&p=f&t=rHmqi8wzDeKmrxT9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-800 text-sm font-medium">Figma Showcase</a>
+              </div>
             </div>
           </div>
 
@@ -132,19 +137,34 @@ export default function Projects() {
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-center gap-2 mb-1">
-                <span className="inline-block bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-xs font-semibold">Data</span>
-                <span className="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">MySQL</span>
+                <span className="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold">HTML</span>
+                <span className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold">JavaScript</span>
+                <span className="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">PHP</span>
+                <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Data Import</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-1">U.S. Police Shooting Demographics Analysis</h3>
+              <p className="text-xs text-gray-600 mb-1 font-semibold">Web Developer & Data Integration</p>
               <p className="text-xs text-gray-500 mb-1">Sep 2023 - Dec 2023</p>
               <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2">
-                <li>Web app with JS, HTML, CSS, MySQL</li>
-                <li>Dynamic tables & visualizations</li>
-                <li>User login, search history</li>
-                <li>Pattern analysis: age, gender, race, location</li>
+                <li><b>Full-stack, Data Visualization, Database</b></li>
+                <li>Web app for US police shooting data analysis and visualization</li>
               </ul>
+              <button
+                className="self-start mb-2 px-3 py-1 bg-gray-200 rounded text-xs text-gray-700 hover:bg-gray-300 transition"
+                onClick={() => setShowDetail4((prev) => !prev)}
+              >
+                {showDetail4 ? "Hide Details" : "Show Details"}
+              </button>
+              {showDetail4 && (
+                <ul className="list-disc list-inside text-gray-700 text-xs space-y-1 mb-2 animate-fade-in">
+                  <li><b>Dynamic Data Visualization:</b> Engineered an interactive dashboard using Chart.js to visualize fatal police shooting data across the US, allowing users to generate Bar, Line, and Pie charts based on specific demographics and states.</li>
+                  <li><b>Database Management:</b> Successfully imported and managed large-scale datasets from The Washington Post into MySQL, establishing a robust backend connection to serve real-time data to the frontend.</li>
+                  <li><b>Full-stack Integration:</b> Developed a complete web application featuring User Authentication (Login/Registration), theme customization (Color/Font preferences), and complex data fetching using PHP and JavaScript.</li>
+                  <li><b>Responsive Interface Implementation:</b> Built a multi-page functional website using HTML5 and CSS3, ensuring the layout remains structured and user-friendly while handling extensive textual and graphical information.</li>
+                </ul>
+              )}
               <div className="mt-auto flex gap-2">
-                <a href="#" className="text-gray-500 hover:text-gray-800 text-sm font-medium">GitHub</a>
+                {/* <a href="#" className="text-gray-500 hover:text-gray-800 text-sm font-medium">GitHub</a> */}
               </div>
             </div>
           </div>
