@@ -15,13 +15,13 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="col-span-2">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I'm a Master's student in Computer Science at NYU Tandon, passionate about building beautiful and functional websites. My main focus is front-end web development—turning Figma designs or wireframes into real, interactive web pages using HTML, CSS, and JavaScript (and frameworks like React/Next.js).
+              I am a <b>Master’s student in Computer Science at NYU Tandon</b>, specializing in bridging the gap between sophisticated design and high-performance front-end engineering. My core expertise lies in translating complex Figma prototypes into pixel-perfect, interactive web applications using modern technologies like <b>React, Next.js, and TypeScript</b>. I thrive on the challenge of turning static wireframes into responsive, user-centric interfaces that function seamlessly across all devices.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I enjoy collaborating with designers and product teams to bring ideas to life on the web. My strengths are in translating design specs into pixel-perfect, responsive, and accessible websites. I love the process of coding up layouts, animations, and user interactions, and making sure everything works smoothly across devices.
+              Beyond writing clean, maintainable code, I bring strong leadership experience as a <b>Scrum Master</b>. Having led cross-functional teams of seven, I am highly proficient in managing Agile sprints and facilitating collaboration between designers and developers. My technical portfolio is diverse, ranging from architecting AI-powered health dashboards to engineering full-stack data visualizers that manage large-scale datasets (8,000+ entries) using MySQL and PHP.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Outside of coding, I enjoy hiking, photography, and documenting travel experiences. I'm also passionate about mentoring others and building inclusive communities in tech.
+              Outside of the terminal, I am an avid photographer and traveler. These creative outlets sharpen my eye for detail and visual harmony, which I bring back to every project I build. I am currently seeking <b>Front-end Engineering opportunities</b> where I can combine my technical rigor with my passion for beautiful, functional design.
             </p>
           </div>
           
