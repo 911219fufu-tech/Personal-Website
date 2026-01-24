@@ -164,7 +164,7 @@ export default function Education() {
                 </div>
                 <div>Bachelor's in Computer Science(Dual Degree)</div>
               </div>
-              <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+              <div className="bg-gray-50 rounded-xl p-4 border border-gray-200 md:mt-0 mt-2">
                 <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
                   <span className="inline-block text-yellow-400">
                     {/* GPA: Star */}
@@ -172,7 +172,10 @@ export default function Education() {
                   </span>
                   GPA
                 </div>
-                <div>3.9 / 4.0</div>
+                <div>
+                  3.9 / 4.0
+                  <span className="ml-2 inline-block px-2 py-0.5 text-xs font-semibold bg-yellow-50 text-yellow-800 rounded align-middle border border-yellow-200">Summa Cum Laude</span>
+                </div>
                 <div className="w-full h-2 bg-gray-200 rounded-full mt-2 overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 rounded-full transition-all duration-1000"
@@ -191,39 +194,48 @@ export default function Education() {
                 <div>Aug 2021 – May 2025</div>
               </div>
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
-                <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
-                  <span className="inline-block text-yellow-400">
-                    {/* Dean's List & Scholarship: Ribbon */}
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
-                  </span>
-                  Dean's List & Scholarship
-                </div>
+                {/* Graduation Distinctions */}
                 <div className="flex items-center justify-between">
-                  <span>5 semesters</span>
+                  <div>
+                    <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
+                      <span className="inline-block text-yellow-400">
+                        {/* Medal icon */}
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
+                      </span>
+                      Graduation Distinctions
+                    </div>
+                    {/* <div className="text-lg text-gray-800 mt-1 mb-1">2 distinctions</div> */}
+                    <span>2 distinctions</span>
+                  </div>
                   <button
                     className="ml-2 px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded hover:bg-yellow-200 transition"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setOpenSFSUDean((v) => !v);
-                    }}
+                    onClick={() => setOpenSFSUDean((v) => !v)}
                     aria-expanded={openSFSUDean}
                   >
                     {openSFSUDean ? "Hide" : "Details"}
                   </button>
                 </div>
                 {openSFSUDean && (
-                  <div className="absolute left-0 top-full w-full mt-2 z-10 bg-white rounded-xl shadow-lg border border-gray-200 p-4 text-gray-700 text-sm">
-                    <div className="font-semibold mb-1">Dean's List</div>
-                    <ul className="list-disc list-inside mb-2">
-                      <li><span className="font-bold">FCU</span> — Spring 2023</li>
-                      <li><span className="font-bold">SFSU</span> — Fall 2023, Spring 2024, Fall 2024, Spring 2025</li>
-                    </ul>
-                    <div className="font-semibold mb-1">Scholarship</div>
-                    <ul className="list-disc list-inside">
-                      <li><span className="font-bold">FCU</span> — Spring 2023</li>
-                    </ul>
-                  </div>
+                  <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mb-2 mt-2">
+                    <li>Summa Cum Laude, <span className="font-bold">SFSU</span>, Class of 2025</li>
+                    <li>Academic Excellence Award (Top of the Department), <span className="font-bold">FCU</span>, Class of 2025 (114級)</li>
+                  </ul>
                 )}
+              </div>
+              <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                {/* Dean’s List & Scholarship */}
+                <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
+                  <span className="inline-block text-yellow-400">
+                    {/* Ribbon icon */}
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
+                  </span>
+                  Dean’s List & Scholarship
+                </div>
+                <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mt-2">
+                  <li>Dean’s List, <span className="font-bold">SFSU</span>, Fall 2023, Spring 2024, Fall 2025, Spring 2024</li>
+                  <li>Dean’s List, <span className="font-bold">FCU</span>, Spring 2023</li>
+                  <li>Scholarship, <span className="font-bold">FCU</span>, Spring 2023</li>
+                </ul>
               </div>
               {/* Certificate Area */}
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
