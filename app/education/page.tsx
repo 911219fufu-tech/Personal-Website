@@ -8,6 +8,7 @@ export default function Education() {
   const [openNYUCourses, setOpenNYUCourses] = useState(false);
   const [openSFSUCourses, setOpenSFSUCourses] = useState(false);
   const [openSFSUDean, setOpenSFSUDean] = useState(false);
+  const [openSFSUDeanList, setOpenSFSUDeanList] = useState(false); // new state for Dean's List & Scholarship
   const [openSFSUCertificate, setOpenSFSUCertificate] = useState(false);
   // GPA bar animation state (for both GPA bars)
   const [gpaBar1, setGpaBar1] = useState(0); // for NYU card
@@ -238,13 +239,13 @@ export default function Education() {
                   </div>
                   <button
                     className="ml-2 px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded hover:bg-yellow-200 transition"
-                    onClick={() => setOpenSFSUCourses((v) => !v)}
-                    aria-expanded={openSFSUCourses}
+                    onClick={() => setOpenSFSUDeanList((v) => !v)}
+                    aria-expanded={openSFSUDeanList}
                   >
-                    {openSFSUCourses ? "Hide" : "Details"}
+                    {openSFSUDeanList ? "Hide" : "Details"}
                   </button>
                 </div>
-                {openSFSUCourses && (
+                {openSFSUDeanList && (
                   <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mt-2">
                     <li>Dean’s List, <span className="font-bold">SFSU</span>, Fall 2023, Spring 2024, Fall 2025, Spring 2024</li>
                     <li>Dean’s List, <span className="font-bold">FCU</span>, Spring 2023</li>
