@@ -199,8 +199,8 @@ export default function Education() {
                   <div>
                     <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
                       <span className="inline-block text-yellow-400">
-                        {/* Medal icon */}
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
+                        {/* Trophy icon for Graduation Distinctions */}
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 3a1 1 0 0 1 1 1v2a5 5 0 0 1-4 4.9V13h3a1 1 0 1 1 0 2h-3v2h2a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h2v-2H7a1 1 0 1 1 0-2h3V8.9A5 5 0 0 1 6 6V4a1 1 0 0 1 1-1h10zm-1 2H8v1a3 3 0 0 0 6 0V5z"/></svg>
                       </span>
                       Graduation Distinctions
                     </div>
@@ -224,18 +224,33 @@ export default function Education() {
               </div>
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
                 {/* Dean’s List & Scholarship */}
-                <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
-                  <span className="inline-block text-yellow-400">
-                    {/* Ribbon icon */}
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
-                  </span>
-                  Dean’s List & Scholarship
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="font-semibold text-gray-700 mb-1 flex items-center gap-2">
+                      <span className="inline-block text-yellow-400">
+                        {/* Ribbon icon */}
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.76-2.24 5-5 5s-5-2.24-5-5a5 5 0 0 1 5-5zm0 12c-3.31 0-6 2.69-6 6v2h2v-2c0-2.21 1.79-4 4-4s4 1.79 4 4v2h2v-2c0-3.31-2.69-6-6-6z"/></svg>
+                      </span>
+                      Dean’s List & Scholarship
+                    </div>
+                    {/* <div className="text-xl text-gray-800 mt-1 mb-1">5 semesters</div> */}
+                    <span>5 semesters</span>
+                  </div>
+                  <button
+                    className="ml-2 px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded hover:bg-yellow-200 transition"
+                    onClick={() => setOpenSFSUCourses((v) => !v)}
+                    aria-expanded={openSFSUCourses}
+                  >
+                    {openSFSUCourses ? "Hide" : "Details"}
+                  </button>
                 </div>
-                <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mt-2">
-                  <li>Dean’s List, <span className="font-bold">SFSU</span>, Fall 2023, Spring 2024, Fall 2025, Spring 2024</li>
-                  <li>Dean’s List, <span className="font-bold">FCU</span>, Spring 2023</li>
-                  <li>Scholarship, <span className="font-bold">FCU</span>, Spring 2023</li>
-                </ul>
+                {openSFSUCourses && (
+                  <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mt-2">
+                    <li>Dean’s List, <span className="font-bold">SFSU</span>, Fall 2023, Spring 2024, Fall 2025, Spring 2024</li>
+                    <li>Dean’s List, <span className="font-bold">FCU</span>, Spring 2023</li>
+                    <li>Scholarship, <span className="font-bold">FCU</span>, Spring 2023</li>
+                  </ul>
+                )}
               </div>
               {/* Certificate Area */}
               <div className="bg-gray-50 rounded-xl p-4 border border-gray-200">
