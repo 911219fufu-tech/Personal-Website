@@ -132,7 +132,7 @@ export default function Education() {
               )}
             <div className="flex flex-col items-center mt-6 gap-3">
               <a
-                href="/transcript.pdf"
+                href="/NYU_SR_TUNF_1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
@@ -373,7 +373,7 @@ export default function Education() {
               <div className="flex flex-col items-center mt-6 gap-3">
                 {/* FCU 按鈕 - 使用深藍色 */}
                 <a
-                  href="/transcript.pdf"
+                  href="/FCU_transcript.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
@@ -385,7 +385,7 @@ export default function Education() {
                 
                 {/* SFSU 按鈕 - 使用 SFSU 紫金組合中的深紫/藍 */}
                 <a
-                  href="/sfsu-transcript.pdf"
+                  href="/SSR_TSRPT.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
