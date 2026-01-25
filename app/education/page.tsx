@@ -135,7 +135,8 @@ export default function Education() {
                 href="/transcript.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-medium cursor-pointer shadow-md hover:from-pink-600 hover:to-yellow-500 transition"
+                className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
+                style={{ backgroundColor: '#66018f' }} // 使用 NYU 紫色
                 tabIndex={0}
               >
                 View Full NYU Transcript
@@ -370,25 +371,30 @@ export default function Education() {
                 </div>
               )}
               <div className="flex flex-col items-center mt-6 gap-3">
-              <a
-                href="/transcript.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-medium cursor-pointer shadow-md hover:from-pink-600 hover:to-yellow-500 transition"
-                tabIndex={0}
-              >
-                View Full FCU Transcript
-              </a>
-              <a
-                href="/sfsu-transcript.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-medium cursor-pointer shadow-md hover:from-cyan-600 hover:to-purple-600 transition"
-                tabIndex={0}
-              >
-                View Full SFSU Transcript
-              </a>
-            </div>
+                {/* FCU 按鈕 - 使用深藍色 */}
+                <a
+                  href="/transcript.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
+                  style={{ backgroundColor: '#231261' }} // 與左側 Icon 顏色一致
+                  tabIndex={0}
+                >
+                  View Full FCU Transcript
+                </a>
+                
+                {/* SFSU 按鈕 - 使用 SFSU 紫金組合中的深紫/藍 */}
+                <a
+                  href="/sfsu-transcript.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 rounded-full text-white font-medium cursor-pointer shadow-md transition transform hover:scale-105"
+                  style={{ backgroundColor: '#231261' }} // 統一使用深色調，或可以微調為更亮的紫色
+                  tabIndex={0}
+                >
+                  View Full SFSU Transcript
+                </a>
+              </div>
             </div>
           </div>
         </div>
