@@ -230,7 +230,16 @@ export default function Education() {
                 </div>
                 {openSFSUDean && (
                   <ul className="list-disc list-inside text-gray-700 text-sm space-y-1 mb-2 mt-2">
-                    <li>Summa Cum Laude, <span className="font-bold">SFSU</span>, Class of 2025</li>
+                    <li>
+                      <a
+                        href="https://commencement.sfsu.edu/sites/default/files/documents/2025-Commencement-Main-Program-Online_accessible.pdf#page=41"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-600 hover:text-blue-800"
+                      >
+                        Summa Cum Laude
+                      </a>, <span className="font-bold">SFSU</span>, Class of 2025
+                    </li>
                     <li>
                       <a
                         href="https://commencement.fcu.edu.tw/114award/"
@@ -239,7 +248,7 @@ export default function Education() {
                         className="underline text-blue-600 hover:text-blue-800"
                       >
                         Academic Excellence Award (Top of the Department)
-                      </a>, <span className="font-bold">FCU</span>, Class of 2025 (114級)
+                      </a>, <span className="font-bold">FCU</span>, Class of 2025 (114級-傅佳音)
                     </li>
                   </ul>
                 )}
