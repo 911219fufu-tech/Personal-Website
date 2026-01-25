@@ -130,6 +130,17 @@ export default function Education() {
                   </div>
                 </div>
               )}
+            <div className="flex flex-col items-center mt-6 gap-3">
+              <a
+                href="/transcript.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-medium cursor-pointer shadow-md hover:from-pink-600 hover:to-yellow-500 transition"
+                tabIndex={0}
+              >
+                View Full NYU Transcript
+              </a>
+            </div>
             </div>
           </div>
           {/* SFSU/FCU */}
@@ -358,6 +369,26 @@ export default function Education() {
                   </div>
                 </div>
               )}
+              <div className="flex flex-col items-center mt-6 gap-3">
+              <a
+                href="/transcript.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-medium cursor-pointer shadow-md hover:from-pink-600 hover:to-yellow-500 transition"
+                tabIndex={0}
+              >
+                View Full FCU Transcript
+              </a>
+              <a
+                href="/sfsu-transcript.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-medium cursor-pointer shadow-md hover:from-cyan-600 hover:to-purple-600 transition"
+                tabIndex={0}
+              >
+                View Full SFSU Transcript
+              </a>
+            </div>
             </div>
           </div>
         </div>
